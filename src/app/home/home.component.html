@@ -1,8 +1,14 @@
-﻿<div class="p-4">
+﻿<html>
+<div class="p-4">
     <div class="container">
         <h1>Hi {{user.firstName}}!</h1>
-        <p>OutFit Planner main page</p>
-       
-   
+        <h2><strong>Image Upload</strong></h2>
+        <input type="file"(change)="onFileSelected($event)">
+        
+        <button type="button"(click)="onUpload()" >Upload</button> 
     </div>
+       
 </div>
+</html>
+
+
